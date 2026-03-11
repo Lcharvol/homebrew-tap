@@ -11,6 +11,12 @@ cask "claude-god" do
 
   app "Claude God.app"
 
+  postflight do
+    system_command "/usr/bin/xattr",
+                   args: ["-cr", "#{appdir}/Claude God.app"],
+                   sudo: false
+  end
+
   zap trash: [
     "~/Library/Preferences/com.lcharvol.claude-god.plist",
   ]

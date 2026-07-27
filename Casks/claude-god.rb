@@ -7,7 +7,7 @@ cask 'claude-god' do
   desc 'Monitor your Claude AI usage from the macOS menu bar'
   homepage 'https://github.com/Lcharvol/Claude-God'
 
-  depends_on macos: ':ventura'
+  depends_on macos: :ventura
 
   app 'Claude God.app'
 

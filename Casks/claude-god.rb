@@ -1,6 +1,6 @@
 cask 'claude-god' do
-  version '2.25.1'
-  sha256 '5e305b6131fcc9ae8d55567b08f11892fb1ba8e8f17bfdfb996ff79dba92c48b'
+  version '2.25.2'
+  sha256 'aa43a61113ed687032e37e03ac2f3ada8b653af8615d8711b3a7519f452704b6'
 
   url "https://github.com/Lcharvol/Claude-God/releases/download/v#{version}/ClaudeGod.dmg"
   name 'Claude God'

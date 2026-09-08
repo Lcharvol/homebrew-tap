@@ -11,10 +11,8 @@ cask 'claude-god' do
 
   app 'Claude God.app'
 
-  postflight do
-    system_command '/usr/bin/xattr',
-                   args: ['-cr', "#{appdir}/Claude God.app"],
-                   sudo: false
+  postflight_steps do
+    run '/usr/bin/xattr', args: ['-cr', '{{appdir}}/Claude God.app']
   end
 
   zap trash: [
